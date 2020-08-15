@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Vue Mastery</title>
+    <title>Vue Product Page</title>
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
@@ -16,7 +16,7 @@
 
         <div class="cart">Cart({{ cart.length }})</div>
         <product-display :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeById">
-            <!-- solution -->
+        
         </product-display>
     </div>
 
@@ -25,6 +25,8 @@
 
     <!-- Import Components -->
     <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
 
     <!-- Mount App -->
     <script>
